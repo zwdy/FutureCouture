@@ -1,0 +1,105 @@
+body{
+    background-color: white;
+    text-align: center;
+    height: 100vh
+    /*border: 1px solid black;*/
+}
+
+
+.leftcoloum {
+  position: relative;
+  width: 29%;
+  float: left;
+  height: 100%;
+}
+
+.rightcoloum {
+  position: relative;
+  width: 71%;
+  float: left;
+  height: 100%;
+}
+
+.lefthead{
+    height: 12.8%;
+    font-family: sans-serif;
+    font-size: 2vw;
+
+    margin-bottom:5%;
+}
+
+.leftbox{
+    height: 100%;
+    font-family: sans-serif;
+    border: 1px solid black;
+
+}
+
+
+
+/* Container */
+
+.container{
+    background-color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    height: 99.8vh;
+}
+
+
+/* Head */
+.righthead{
+    margin-left:2%;
+    margin-bottom:2%;
+    height: 12.8%;
+    font-family: sans-serif;
+    font-size: 2vw;
+    border: 1px solid black;
+
+}
+
+
+.grid-container {
+   margin-left:2%;
+   height: 85.2%;
+   max-heihgt:85.2%
+   font-family: sans-serif;
+   font-size: 2vw;
+   border: 1px solid black;
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid-item {
+
+
+  padding: 8%;
+  font-size: 30px;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+
+img:hover{
+     border: 2px solid black;
+     border-bottom: 2px solid black;
+     z-index:999;
+}
+
+img {
+  max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+
+#image{
+    opacity:0.5;
+    margin-top:12%;
+}
+

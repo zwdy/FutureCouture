@@ -1,0 +1,179 @@
+body{
+    background-color: white;
+    text-align: center;
+    height: 100vh
+    /*border: 1px solid black;*/
+}
+
+
+
+/* Container */
+
+.container{
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    height: 99.8vh;
+}
+
+
+/* Head */
+.head{
+    height: 12.8vh;
+    font-family: sans-serif;
+    font-size: 2vw;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+/* Preview Two Images */
+.previewcolumn{
+  column-count: 2;
+  column-gap: .5vw;
+  column-rule: .1px dashed lightgrey;
+  width: 60vw;
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Preview Uploaded */
+.previewbox {
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#previewimg {
+}
+
+
+/* Preview Transferred */
+.transferpreviewbox {
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+
+/* Box Container for two groups of buttons */
+.buttoncontainer{
+    width: 60vw;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    display:flex;
+    /*border: 1px solid black;*/
+}
+.column {
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height:28vh;
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+.column-a {
+    /*border: 1px solid black;*/
+}
+.column-b {
+    /*border: 1px solid black;*/
+}
+
+
+
+
+/* Button 
+.button {
+    border: 0px;
+    background-color: deepskyblue;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+}*/
+
+
+label{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.upload-button{
+    display:block;
+    padding: 0.1rem;
+    background-color: black;
+    color: white;
+    margin:auto;
+    margin-top:1rem;
+    width:60%;
+}
+
+
+
+button {
+    width: 120px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #111111;
+    cursor: pointer;
+    background-color: white;
+}
+
+#start-camera {
+    margin-top: 50px;
+    display:block;
+    padding: 0.1rem;
+    background-color: black;
+    color: white;
+    width:60%;
+    margin:auto;
+}
+
+#video {
+    display: none;
+    margin: 50px auto 0 auto;
+}
+
+#click-photo {
+    display: none;
+    margin:auto;
+}
+
+#dataurl-container {
+    display: none;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+#dataurl-header {
+    text-align: center;
+    font-size: 15px;
+}
+
+#dataurl {
+    display: block;
+    height: 100px;
+    width: 320px;
+    margin: 10px auto;
+    resize: none;
+    outline: none;
+    border: 1px solid #111111;
+    padding: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+}

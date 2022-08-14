@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>styleGAN</title>
+    <meta name="description" content="this is the description">
+    <link rel="stylesheet" href="styleStyleGAN.css"/>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<div class="container" style="width:80vw;">
+    <div class="head">YUNDI</div>
+    <form enctype="multipart/form-data" id="myform">
+        <div class="previewcolumn">
+            <div class="previewbox">
+                <img id="previewimg">
+                <video id="video" width="1024" height="1024" autoplay></video>
+                <div id="dataurl-container">
+                    <canvas id="canvas" width="1024" height="1024"></canvas>
+                    <div id="dataurl-header">Image Data URL</div>
+                    <textarea id="dataurl" readonly></textarea>
+                </div>
+            </div>
+            <div class="transferpreviewbox">
+                <img src="" id="result_image">
+            </div>
+
+        </div>
+
+
+        <div class="buttoncontainer">
+            <div class="column column-a">
+                <input type="file" id="file" name="file" accept="image/*;capture=camera" hidden
+                       onchange="imageChanged()"/>
+                <label for="file">Upload a selfie</label>
+
+                <button id="start-camera" type="button" style="margin:auto;
+                                                                margin-top:10px;
+                                                                background-color: black;
+                                                                color: white;
+                                                                font-size:1.05rem;
+                                                                height: 2.2rem;
+                                                                width:21.5%;">
+                    Start camera</button>
+                <button id="click-photo" type="button" style="margin:auto; margin-top:15px;">Click Photo</button>
+
+
+
+                <!--<input type="button" class="button" value="Upload" id="but_upload"/>-->
+            </div>
+
+            <div class="column column-b">
+                <div>
+                    <button class="upload-button"
+                            style="background: url(colorswatch/colourswatch01.jpg)"
+                            onclick="uploadImage('style01.jpg')"
+                            type="button">
+                        Transfer Style 1
+                    </button>
+                    <button class="upload-button"
+                            style="background: url(colorswatch/colourswatch02.jpg)"
+                            onclick="uploadImage('style02.jpg')"
+                            type="button">
+                        Transfer Style 2
+                    </button>
+                    <button class="upload-button"
+                            style="background: url(colorswatch/colourswatch03.jpg)"
+                            onclick="uploadImage('style03.jpg')"
+                            type="button">
+                        Transfer Style 3
+                    </button>
+                    <button class="upload-button"
+                            style="background: url(colorswatch/colourswatch04.jpg)"
+                            onclick="uploadImage('style04.jpg')"
+                            type="button">
+                        Transfer Style 4
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+
+</div>
+
+<script src="photo.js"></script>
+</body>
+
+</html>
+
+
+
