@@ -22,9 +22,6 @@ body{
 
 .lefthead{
     height: 12.8%;
-    font-family: sans-serif;
-    font-size: 2vw;
-
     margin-bottom:5%;
 }
 
@@ -55,7 +52,13 @@ body{
     font-family: sans-serif;
     font-size: 2vw;
     border: 1px solid black;
-
+    display: flex;
+     position: relative;
+}
+.righthead .content{
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
 }
 
 
@@ -71,14 +74,11 @@ body{
 }
 
 .grid-item {
-
-
   padding: 8%;
   font-size: 30px;
-  text-align: center;
   overflow: hidden;
   margin: auto;
-  display: block;
+  bottom:0;
 }
 
 img:hover{
@@ -90,16 +90,22 @@ img:hover{
 img {
   max-width: inherit;
   max-height: inherit;
-  height: inherit;
-  width: inherit;
+  height: 90%;
+  width: 90%;
   object-fit: cover;
   border: 2px solid transparent;
   cursor: pointer;
+  margin:auto;
 }
 
 
 #image{
-    opacity:0.5;
-    margin-top:12%;
+
 }
 
+#itemDescription {
+  width: 100%;
+  font-size:100%;
+  padding:3%;
+  text-align:left;
+}
